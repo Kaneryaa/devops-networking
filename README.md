@@ -98,6 +98,22 @@ Computer networking involves the interconnection of various devices and systems 
 
 
 ## Classification 
+Networks can be classified by geography based on their physical scope and coverage area. The three major classifications are:
+
+**LAN (Local Area Network):**
+
+- Scope: A LAN covers a relatively small physical area, typically within a single building or a campus.
+- Example: In an office building, all computers, printers, and servers connected to a common switch or hub form a LAN. This allows for easy sharing of resources like files and printers.
+
+**MAN (Metropolitan Area Network):**
+
+- Scope: A MAN covers a larger geographic area, such as a city or a campus with multiple buildings.
+-Example: A university campus with multiple buildings might have a MAN connecting all the buildings, allowing for centralized services like a shared library database or centralized email servers.
+
+**WAN (Wide Area Network):**
+
+- Scope: A WAN spans a large geographic area, potentially a country or even multiple countries. It can be a collection of LANs and MANs interconnected over a wide area.
+- Example: The internet itself is the largest WAN. Companies with offices in different cities or countries often use WANs to connect their various branches.
 ## Devices 
 ## Home Network 
 ## IP Adress 
