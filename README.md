@@ -1,8 +1,13 @@
-# devops-networking
+# Computer networking basics 
 
-# Day-4 | User Inputs, Control Statements, Loops
-
-## User Inputs
+## Components
+## OSI Models 
+## Classification 
+## Devices 
+## Home Network 
+## IP Adress 
+## Protocol 
+## DNS & DHCP
 
 To take user inputs in Python, you can use the `input()` function. By default, `input()` returns a string, so you'll need to convert it to the desired data type (int, float, or string) using `int()`, `float()`, or leave it as is.
 
