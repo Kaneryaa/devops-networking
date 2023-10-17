@@ -50,7 +50,34 @@ Computer networking involves the interconnection of various devices and systems 
 
   
 ## OSI Models 
+**Physical Layer (Layer 1)**:
 
+- Function: This layer deals with the physical connection between devices. It defines the hardware, cables, and electrical signals used for transmission.
+- Example: When you plug an Ethernet cable into a computer and a router, the physical layer is responsible for ensuring that electrical signals representing data can travel between them.
+**Data Link Layer (Layer 2)**:
+
+- Function: This layer focuses on reliable point-to-point communication between directly connected devices. It handles issues like addressing, error detection, and flow control.
+- Example: When you send a message over Wi-Fi, the data link layer ensures that the data frames are properly addressed to the intended recipient within your local network.
+**Network Layer (Layer 3)**:
+
+- Function: The network layer enables communication between different networks. It's responsible for routing, logical addressing, and packet forwarding.
+- Example: When you send an email to someone in a different city, the network layer determines the best path for your email to reach its destination across various routers and networks.
+**Transport Layer (Layer 4)**:
+
+- Function: This layer ensures end-to-end communication and handles data flow control. It also addresses issues like reliability and error correction.
+- Example: When you're streaming a video, the transport layer (TCP, for example) ensures that the video frames arrive in the correct order and retransmits any lost data packets.
+**Session Layer (Layer 5)**:
+
+- Function: The session layer establishes, manages, and terminates connections or sessions between applications. It handles tasks like authentication and synchronization.
+- Example: When you log into a website, the session layer is involved in setting up and maintaining the connection between your browser and the server.
+**Presentation Layer (Layer 6)**:
+
+- Function: This layer handles data translation and encryption, ensuring that information sent by one system can be understood by another. It also manages data compression.
+- Example: When you download a file, this layer could be responsible for decompressing it and making sure it's in a format your computer can understand.
+**Application Layer (Layer 7)**:
+
+- Function: The application layer is closest to the end-user and provides network services directly to user applications. It includes protocols for tasks like email, file transfer, and web browsing.
+- Example: Browsers like Chrome or Firefox use application layer protocols like HTTP or HTTPS to retrieve and display web pages.
 ## Classification 
 ## Devices 
 ## Home Network 
