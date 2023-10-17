@@ -78,6 +78,8 @@ Computer networking involves the interconnection of various devices and systems 
 
 - Function: The application layer is closest to the end-user and provides network services directly to user applications. It includes protocols for tasks like email, file transfer, and web browsing.
 - Example: Browsers like Chrome or Firefox use application layer protocols like HTTP or HTTPS to retrieve and display web pages.
+
+
 ## Classification 
 ## Devices 
 ## Home Network 
