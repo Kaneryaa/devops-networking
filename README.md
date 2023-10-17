@@ -2,9 +2,9 @@
 Computer networking involves the interconnection of various devices and systems to enable them to communicate and share resources. Here are some basic components and concepts in computer networking
 
 ## Components
-Devices:
+- **Devices**:
 
- - **Computers**: These can be desktops, laptops, servers, or any device capable of running networking software.
+Computers: These can be desktops, laptops, servers, or any device capable of running networking software.
 Switches and Routers: These are critical devices for directing network traffic. Switches connect devices within a local area network (LAN), while routers connect different networks and manage traffic between them.
 Network Interface Cards (NICs):
 
