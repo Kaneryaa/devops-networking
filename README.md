@@ -6,17 +6,19 @@ Computer networking involves the interconnection of various devices and systems 
 
 - Computers: These can be desktops, laptops, servers, or any device capable of running networking software.
 - Switches and Routers: These are critical devices for directing network traffic. Switches connect devices within a local area network (LAN), while routers connect different networks and manage traffic between them.
-Network Interface Cards (NICs):
 
-NICs are hardware components that allow devices to connect to a network. They provide a physical connection to the network medium (like Ethernet cables or Wi-Fi).
+**Network Interface Cards (NICs)**:
+
+- NICs are hardware components that allow devices to connect to a network. They provide a physical connection to the network medium (like Ethernet cables or Wi-Fi).
 Cabling and Connectors:
 
-Ethernet Cables: These are commonly used for wired network connections. They come in different categories (e.g., Cat5e, Cat6, Cat6a) which determine their speed and bandwidth capabilities.
-Fiber Optic Cables: These use light signals to transmit data and are capable of high-speed, long-distance communication.
-Wireless: Wi-Fi is a common wireless networking technology that allows devices to connect without physical cables.
-Network Protocols:
+- Ethernet Cables: These are commonly used for wired network connections. They come in different categories (e.g., Cat5e, Cat6, Cat6a) which determine their speed and bandwidth capabilities.
+- Fiber Optic Cables: These use light signals to transmit data and are capable of high-speed, long-distance communication.
+- Wireless: Wi-Fi is a common wireless networking technology that allows devices to connect without physical cables.
 
-Protocols are rules that govern how data is transmitted, received, and formatted in a network. Examples include TCP/IP (Transmission Control Protocol/Internet Protocol), HTTP (Hypertext Transfer Protocol), and FTP (File Transfer Protocol).
+**Network Protocols:**
+
+- Protocols are rules that govern how data is transmitted, received, and formatted in a network. Examples include TCP/IP (Transmission Control Protocol/Internet Protocol), HTTP (Hypertext Transfer Protocol), and FTP (File Transfer Protocol).
 IP Addresses:
 
 IP addresses uniquely identify devices on a network. IPv4 and IPv6 are the two main versions of the Internet Protocol in use today.
