@@ -35,7 +35,7 @@ Computer networking involves the interconnection of various devices and systems 
 - WAN (Wide Area Network): Spans a large geographic area, often connecting multiple LANs across cities or countries.
 **Firewalls and Security Devices:**
 
-- Firewalls control the incoming and outgoing network traffic based on an applied rule set. They are a critical component for network security.
+- Firewalls control the incoming and outgoing network traffic based on an applied rule set. They are a critical component of network security.
 **DNS (Domain Name System):**
 
 - DNS translates human-readable domain names (like www.example.com) into IP addresses that machines can understand.
