@@ -47,6 +47,8 @@ Computer networking involves the interconnection of various devices and systems 
 
 - The gateway is a device that connects a local network to the internet. It serves as an entry and exit point for data traffic.
 - These are some fundamental components and concepts in computer networking. Understanding these basics is crucial for setting up and managing networks effectively.
+
+  
 ## OSI Models 
 ## Classification 
 ## Devices 
