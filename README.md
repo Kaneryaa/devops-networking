@@ -213,13 +213,12 @@ In networking, a port is a logical endpoint for communication. It's like a door 
 
 ## Network Command 
 
-To take user inputs in Python, you can use the `input()` function. By default, `input()` returns a string, so you'll need to convert it to the desired data type (int, float, or string) using `int()`, `float()`, or leave it as is.
 
-Here's an example code that takes user inputs in different data types:
 
-```python
-# Taking an integer input
-user_input_int = int(input("Enter an integer: "))
+```command
+sudo -i
+ifconfig
+ip addr show 
 
 # Taking a floating-point input
 user_input_float = float(input("Enter a float: "))
