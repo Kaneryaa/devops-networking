@@ -159,6 +159,10 @@ IPv4 (Internet Protocol version 4) and IPv6 (Internet Protocol version 6) are tw
 8. **Backward Compatibility**: IPv6 is designed to be backward compatible with IPv4, but not the other way around. This means that an IPv6 network can communicate with IPv4 networks through various transition mechanisms.
 
 Remember that as of my last knowledge update in September 2021, IPv4 is still widely used, but IPv6 adoption is growing steadily to accommodate the increasing number of connected devices globally.
+
+![image](https://github.com/Kaneryaa/devops-networking/assets/89991677/496ae2b5-21de-464e-8d91-559094f6fb9e)
+
+
 ## Protocol 
 ## DNS & DHCP
 ## Network Command 
