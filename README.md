@@ -210,7 +210,7 @@ In networking, a port is a logical endpoint for communication. It's like a door 
 
 - Ports work in conjunction with protocols. For example, when you browse a website using a web browser (which uses the HTTP protocol), your browser sends a request to the server's IP address on port 80 (for HTTP) or port 443 (for HTTPS). The server's software is configured to listen for incoming requests on these ports and responds accordingly.
 
-## DNS & DHCP
+
 ## Network Command 
 
 To take user inputs in Python, you can use the `input()` function. By default, `input()` returns a string, so you'll need to convert it to the desired data type (int, float, or string) using `int()`, `float()`, or leave it as is.
