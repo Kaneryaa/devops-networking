@@ -174,7 +174,7 @@ In the OSI (Open Systems Interconnection) model, which is a conceptual framework
 
 This is the top layer and deals with the protocols and data formats that applications use for communication over a network (e.g., HTTP for web browsing, SMTP for email).
 
-** Presentation Layer:** 
+**Presentation Layer:** 
 
 This layer handles data encoding, encryption, and compression to ensure that data is presented in a format that the application layer can understand.
 
@@ -182,19 +182,19 @@ This layer handles data encoding, encryption, and compression to ensure that dat
 
 It establishes, maintains, and terminates connections between applications. It also manages sessions (long-running connections) and ensures data synchronization.
 
-**Transport Layer: **
+**Transport Layer:**
 
 This layer is responsible for end-to-end communication. It takes care of reliable data delivery, error checking, and flow control. Two of the most common transport layer protocols are TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
 
-**Network Layer: **
+**Network Layer:**
 
 This layer is responsible for routing packets across networks. It determines the best path for data to travel from the source to the destination, using devices like routers. IP (Internet Protocol) operates at this layer.
 
-** Data Link Layer: **
+**Data Link Layer:**
 
 This layer deals with the physical connection between devices. It handles tasks like addressing (using MAC addresses), framing, and error detection.
 
-**Physical Layer: **
+**Physical Layer:**
 
 This is the lowest layer and deals with the actual hardware, including cables, switches, and network interface cards. It's responsible for transmitting raw binary data over a physical medium.
 
