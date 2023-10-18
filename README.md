@@ -215,19 +215,153 @@ In networking, a port is a logical endpoint for communication. It's like a door 
 
 
 
-```command
-sudo -i
-ifconfig
-ip addr show 
+```
 
-# Taking a floating-point input
-user_input_float = float(input("Enter a float: "))
+1. `sudo -i`
+   - *Output*: 
+     ```
+     [sudo] password for user:
+     root@your_computer:~#
+     ```
 
-# Taking a string input
-user_input_string = input("Enter a string: ")
+2. `ifconfig`
+   - *Output*: 
+     ```
+     eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+             inet 192.168.1.100  netmask 255.255.255.0  broadcast 192.168.1.255
+             inet6 fe80::a00:27ff:fe6b:3f6c  prefixlen 64  scopeid 0x20<link>
+             ether 08:00:27:6b:3f:6c  txqueuelen 1000  (Ethernet)
+             RX packets 29256  bytes 19873901 (19.8 MB)
+             RX errors 0  dropped 0  overruns 0  frame 0
+             TX packets 13915  bytes 1837405 (1.8 MB)
+             TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
-# Printing the inputs
-print(f"You entered an integer: {user_input_int}")
-print(f"You entered a float: {user_input_float}")
-print(f"You entered a string: {user_input_string}")
+     lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+             inet 127.0.0.1  netmask 255.0.0.0
+             inet6 ::1  prefixlen 128  scopeid 0x10<host>
+             loop  txqueuelen 1000  (Local Loopback)
+             RX packets 157  bytes 12864 (12.8 KB)
+             RX errors 0  dropped 0  overruns 0  frame 0
+             TX packets 157  bytes 12864 (12.8 KB)
+             TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+     ```
+
+3. `ip addr show`
+   - *Output*:
+     ```
+     1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+         link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+         inet 127.0.0.1/8 scope host lo
+            valid_lft forever preferred_lft forever
+         inet6 ::1/128 scope host
+            valid_lft forever preferred_lft forever
+     2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+         link/ether 08:00:27:6b:3f:6c brd ff:ff:ff:ff:ff:ff
+         inet 192.168.1.100/24 brd 192.168.1.255 scope global dynamic eth0
+            valid_lft 78016sec preferred_lft 78016sec
+         inet6 fe80::a00:27ff:fe6b:3f6c/64 scope link
+            valid_lft forever preferred_lft forever
+     ```
+
+4. `ping servoxi.com`
+   - *Output*: 
+     ```
+     PING servoxi.com (104.21.234.15) 56(84) bytes of data.
+     64 bytes from 104.21.234.15 (104.21.234.15): icmp_seq=1 ttl=60 time=11.5 ms
+     64 bytes from 104.21.234.15 (104.21.234.15): icmp_seq=2 ttl=60 time=11.6 ms
+     ...
+     ```
+
+5. `tracert www.google.com`
+   - *Output*: (On Linux, it's `traceroute`)
+     ```
+     traceroute to www.google.com (172.217.7.196), 30 hops max, 60 byte packets
+      1  gateway (192.168.1.1)  1.237 ms  1.493 ms  1.692 ms
+      2  * * *
+      3  172.24.32.1 (172.24.32.1)  9.065 ms  9.303 ms  9.615 ms
+      ...
+     ```
+
+6. `netstat -antp`
+   - *Output*: 
+     ```
+     Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+     tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      940/sshd
+     tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      1112/cupsd
+     ...
+     ```
+
+7. `nmap localhost`
+   - *Output*: 
+     ```
+     Starting Nmap 7.80 ( https://nmap.org ) at 2021-09-24 11:25 UTC
+     Nmap scan report for localhost (127.0.0.1)
+     Host is up (0.000065s latency).
+     Not shown: 996 closed ports
+     PORT     STATE SERVICE
+     22/tcp   open  ssh
+     80/tcp   open  http
+     631/tcp  open  ipp
+     3306/tcp open  mysql
+     ...
+     ```
+
+8. `dig www.google.com`
+   - *Output*: 
+     ```
+     ; <<>> DiG 9.16.1-Ubuntu <<>> www.google.com
+     ;; global options: +cmd
+     ;; Got answer:
+     ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 1271
+     ;; flags: qr rd ra; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 1
+     ...
+     ```
+
+9. `nslookup www.google.com`
+   - *Output*: 
+     ```
+     Server:  UnKnown
+     Address:  192.168.1.1
+
+     Non-authoritative answer:
+     Name:    www.google.com
+     Addresses:  2606:4700:3031::ac43:b995
+               2606:4700:3037::6818:6cc
+               2606:4700:3036::6818:6bc
+               2606:4700:3034::ac43:b891
+               172.67.185.149
+               104.24.108.115
+               104.24.109.115
+     ```
+
+10. `route -n`
+    - *Output*: 
+      ```
+      Kernel IP routing table
+      Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+      0.0.0.0         192.168.1.1     0.0.0.0         UG    0
+
+      0        0 eth0
+      169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0        0 eth0
+      192.168.1.0     0.0.0.0         255.255.255.0   U     0      0        0 eth0
+      ```
+
+11. `arp`
+    - *Output*: 
+      ```
+      Address                  HWtype  HWaddress           Flags Mask            Iface
+      gateway                  ether   00:1c:c0:85:2b:40   C                     eth0
+      ```
+
+12. `mtr www.google.com`
+    - *Output*: 
+      ```
+      Start: Fri Sep 24 11:32:12 2021
+      HOST: your_computer              Loss%   Snt   Last   Avg  Best  Wrst StDev
+        1.|-- gateway                   0.0%    10    0.3   0.3   0.3   0.4   0.0
+        ...
+      ```
+
+Remember, the actual output may vary depending on your network configuration and system setup.
+
 ```
