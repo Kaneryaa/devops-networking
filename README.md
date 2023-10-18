@@ -159,11 +159,44 @@ IPv4 (Internet Protocol version 4) and IPv6 (Internet Protocol version 6) are tw
 8. **Backward Compatibility**: IPv6 is designed to be backward compatible with IPv4, but not the other way around. This means that an IPv6 network can communicate with IPv4 networks through various transition mechanisms.
 
 Remember that as of my last knowledge update in September 2021, IPv4 is still widely used, but IPv6 adoption is growing steadily to accommodate the increasing number of connected devices globally.
-
+-
 ![image](https://github.com/Kaneryaa/devops-networking/assets/89991677/496ae2b5-21de-464e-8d91-559094f6fb9e)
 
 
 ## Protocol 
+
+Protocol:
+
+A protocol in the context of computer networking refers to a set of rules that govern how data is transmitted, received, and processed across a network. These rules ensure that devices can communicate effectively with one another. Protocols define things like the format of data packets, how devices establish and terminate connections, error handling, and more.
+
+In the OSI (Open Systems Interconnection) model, which is a conceptual framework used to understand how different networking protocols work together, protocols are organized into layers. Each layer has a specific function and communicates with the layers above and below it. The OSI model has seven layers:
+
+Application Layer: This is the top layer and deals with the protocols and data formats that applications use for communication over a network (e.g., HTTP for web browsing, SMTP for email).
+
+Presentation Layer: This layer handles data encoding, encryption, and compression to ensure that data is presented in a format that the application layer can understand.
+
+Session Layer: It establishes, maintains, and terminates connections between applications. It also manages sessions (long-running connections) and ensures data synchronization.
+
+Transport Layer: This layer is responsible for end-to-end communication. It takes care of reliable data delivery, error checking, and flow control. Two of the most common transport layer protocols are TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
+
+Network Layer: This layer is responsible for routing packets across networks. It determines the best path for data to travel from the source to the destination, using devices like routers. IP (Internet Protocol) operates at this layer.
+
+Data Link Layer: This layer deals with the physical connection between devices. It handles tasks like addressing (using MAC addresses), framing, and error detection.
+
+Physical Layer: This is the lowest layer and deals with the actual hardware, including cables, switches, and network interface cards. It's responsible for transmitting raw binary data over a physical medium.
+
+Port Numbers:
+
+In networking, a port is a logical endpoint for communication. It's like a door on a computer or server that allows specific types of data to come in or go out. Each port is associated with a number, known as the port number, ranging from 0 to 65535.
+
+Well-Known Ports (0-1023): These are reserved for specific protocols and services. For example, HTTP typically uses port 80, HTTPS uses port 443, and FTP uses port 21.
+
+Registered Ports (1024-49151): These are used by software applications and services but are not as universally recognized as well-known ports.
+
+Dynamic or Private Ports (49152-65535): These are typically used for temporary or dynamically assigned services.
+
+Ports work in conjunction with protocols. For example, when you browse a website using a web browser (which uses the HTTP protocol), your browser sends a request to the server's IP address on port 80 (for HTTP) or port 443 (for HTTPS). The server's software is configured to listen for incoming requests on these ports and responds accordingly.
+
 ## DNS & DHCP
 ## Network Command 
 
